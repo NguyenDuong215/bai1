@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dao chieu arr</title>
+</head>
+<body>
+<script>
+    let arr = [-5,-2,0,3,5,8];
+    let first = 0;
+    let last = arr.length - 1;
+    while(first< last ) {
+        let b = arr[first];
+        arr[first] = arr[last];
+        arr[last] = b;
+        first++;
+        last--;
+    }
+        document.write("mang dao chieu la "+arr);
+
+</script>
+</body>
+</html>
